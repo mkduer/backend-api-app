@@ -1,6 +1,6 @@
 class EmployeeModel:
     
-    def select_all(self):
+    def select_all(self) -> dict:
         """Connects to datastore to select all employees
 
         Returns:

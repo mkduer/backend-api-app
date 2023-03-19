@@ -21,6 +21,7 @@ This program was created on a Windows OS  using `py` as the python command with 
 The `venv` virtual environment package is included with the standard Python library, and will ensure that local state will be unaffected by this program.
 
 **Create a virtual environment**
+
 * windows: `py -m venv test_env`
 * linux: `python3 -m venv test_env`
 
@@ -39,8 +40,8 @@ The `venv` virtual environment package is included with the standard Python libr
 
 * After the program has compiled, call the endpoint with one of the following options:
   * Curl command in CLI  `curl localhost:$PORT/employees`
-  * Postman `GET` `https://localhost:8080/employees`
-  * Browser at [https://localhost:8080/employees](https://localhost:8080/employees)
+  * Postman `GET` `https://localhost:{PORT}/employees`
+  * Browser by visiting `https://localhost:{PORT}/employees`
 * The resulting JSON should match the following
 
 ```json
@@ -72,7 +73,12 @@ The `venv` virtual environment package is included with the standard Python libr
 ]
 ```
 
+
+
+**Deactivate the Virtual Environment**
+
 If running on a virtual environment, deactivate the environment
+
 * windows/linux: `deactivate`
 
 

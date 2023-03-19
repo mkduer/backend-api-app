@@ -18,7 +18,7 @@ class SqliteDatastore(EmployeeModel):
             cursor.close()
 
 
-    def select_all(self):
+    def select_all(self) -> dict:
         """Connects to database to select all employees
 
         Returns:
@@ -41,7 +41,7 @@ class SqliteDatastore(EmployeeModel):
 
         return rows
 
-    def row_to_dictionary_factory(self, cursor: Cursor, row: tuple[tuple]):
+    def row_to_dictionary_factory(self, cursor: Cursor, row: tuple[tuple]) -> dict:
         """Converts cursor row from tuple to dictionary
 
         Args:
