@@ -4,21 +4,20 @@
 
 ## Instructions
 
-This program was created on a Windows OS  using `py` as the python command with `Python 3.11.2`. Please substitute `python3` or equivalent aliases to run the following instruction on linux machines.
+This program was created with: Windows OS, `Python 3.11.2`, and using `py` launch command in the Git Bash Terminal. Please substitute `python3` or equivalent aliases to run the following instructions on a linux machine bash shell.
 
 * Clone the repository with `git clone git@github.com:mkduer/syndio-backend-api-app.git`
   
 
 
 ### Run Program without a Virtual Environment
-* Install the Flask library if needed `pip -r requirements.txt`
-* Optionally, set a `PORT` environment variable from the CLI (otherwise a default port 8000 will be used)
-  * Example: `export PORT=8888`
+* Install the Flask library if needed `pip install -r requirements.txt`
+* Optionally, set a `PORT` environment variable from the CLI with `export PORT=8888` (otherwise, the default port 8000 will be used)
 * Run the app with `py app.py`
 
 
 ### Run Program in a Virtual Environment
-The `venv` virtual environment package is included with the standard Python library, and will ensure that local state will be unaffected by this program.
+The `venv` virtual environment package is included with the standard Python library, and will ensure that local state will remain unaffected by this program.
 
 **Create a virtual environment**
 
@@ -26,13 +25,12 @@ The `venv` virtual environment package is included with the standard Python libr
 * linux: `python3 -m venv test_env`
 
 **Activate the virtual environment**
-* windows: `source env/Scripts/activate`
-* linux: `source env/bin/activate`
+* windows: `source test_env/Scripts/activate`
+* linux: `source test_env/bin/activate`
 
 **Run the program**
-* Install necessary packages `pip -r requirements.txt`
-* Optionally, set a `PORT` environment variable from the CLI (otherwise a default port 8000 will be used)
-  * Example: `export PORT=8888`
+* Install necessary packages `pip install -r requirements.txt`
+* Optionally, set a `PORT` environment variable from the CLI with `export PORT=8888` (otherwise, the default port 8000 will be used)
 * Run the app with `py app.py`
 
 
@@ -40,8 +38,8 @@ The `venv` virtual environment package is included with the standard Python libr
 
 * After the program has compiled, call the endpoint with one of the following options:
   * Curl command in CLI  `curl localhost:$PORT/employees`
-  * Postman `GET` `https://localhost:{PORT}/employees`
-  * Browser by visiting `https://localhost:{PORT}/employees`
+  * Postman `GET` `http://localhost:{PORT}/employees`
+  * Browser by visiting `http://localhost:{PORT}/employees`
 * The resulting JSON should match the following
 
 ```json
