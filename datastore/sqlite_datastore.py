@@ -7,7 +7,8 @@ class SqliteDatastore(EmployeeModel):
 
     def __init__(self):
         # check for successful DB connection
-        self.database_path = os.getcwd() + '\\' + DATABASE
+        current_path = os.getcwd()
+        self.database_path = os.path.join(current_path, DATABASE)
 
         try: 
             connection = connect(self.database_path)
