@@ -1,4 +1,4 @@
-# Synd.io Backend App
+# Backend Api App
 
 
 
@@ -6,7 +6,7 @@
 
 This program was created with: Windows OS, `Python 3.11.2`, and using `py` launch command in the Git Bash Terminal. Please substitute `python3` or equivalent aliases to run the following instructions on a linux machine bash shell.
 
-* Clone the repository with `git clone git@github.com:mkduer/syndio-backend-api-app.git`
+* Clone the repository with `git clone git@github.com:mkduer/backend-api-app.git`
   
 
 
