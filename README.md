@@ -4,7 +4,9 @@
 
 ## Instructions
 
-This program was created with: Windows OS, `Python 3.11.2`, and using `py` launch command in the Git Bash Terminal. Please substitute `python3` or equivalent aliases to run the following instructions on a linux machine bash shell.
+Specifications: Windows OS, `Python 3.11.2`, and using `py` launch command in the Git Bash Terminal.
+
+An assumption is made that this program will be run on the latest Python versions for either Windows/Linux operating systems, and `python3` should alias a latest version on Linux in the following instructions.
 
 * Clone the repository with `git clone git@github.com:mkduer/backend-api-app.git`
   
@@ -13,7 +15,9 @@ This program was created with: Windows OS, `Python 3.11.2`, and using `py` launc
 ### Run Program without a Virtual Environment
 * Install the Flask library if needed `pip install -r requirements.txt`
 * Optionally, set a `PORT` environment variable from the CLI with `export PORT=8888` (otherwise, the default port 8000 will be used)
-* Run the app with `py app.py`
+* Start the program
+  * windows: `py -m venv test_env`
+  * linux: `python3 -m venv test_env`
 
 
 ### Run Program in a Virtual Environment
@@ -31,7 +35,9 @@ The `venv` virtual environment package is included with the standard Python libr
 **Run the program**
 * Install necessary packages `pip install -r requirements.txt`
 * Optionally, set a `PORT` environment variable from the CLI with `export PORT=8888` (otherwise, the default port 8000 will be used)
-* Run the app with `py app.py`
+* Start the program
+  * windows: `py -m venv test_env`
+  * linux: `python3 -m venv test_env`
 
 
 ### Call the API
