@@ -5,7 +5,7 @@ Allow for abstraction of datastore
 """
 
 datastore = 'sqlite'
-    
+
 if datastore == 'sqlite':
     from datastore.sqlite_datastore import SqliteDatastore as EmployeeModel
 elif datastore == 'cloudstore':
@@ -17,5 +17,5 @@ else:
 
 model = EmployeeModel()
 
-def get_model():
+def get_model() -> EmployeeModel:
     return model
