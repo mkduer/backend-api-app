@@ -1,6 +1,6 @@
 import os
 from constants import DATABASE
-from datastore.EmployeeModel import EmployeeModel
+from models.employee_model import EmployeeModel
 from sqlite3 import connect, Error, Cursor
 
 class SqliteDatastore(EmployeeModel):
