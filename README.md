@@ -4,12 +4,12 @@
 
 ## Instructions
 
-* Clone the app locally with `git clone TODO: add github URL`
+* Clone the app locally with `git clone git@github.com:mkduer/syndio-backend-api-app.git`
 * Run the app with `py app.py`
 * After the program has compiled, call the endpoint with one of the following options:
-  * Call the endpoint with curl `curl localhost:$PORT/employees`
+  * Curl command in CLI  `curl localhost:$PORT/employees`
   * Postman `GET` `https://localhost:8080/employees`
-  * Open up the browser at [https://localhost:8080/employees](https://localhost:8080/employees) 
+  * Browser at [https://localhost:8080/employees](https://localhost:8080/employees)
 
 * The resulting JSON should match the following
 
@@ -42,8 +42,10 @@
 ]
 ```
 
+
+
 ## MVP
 
-- We can run the api from your setup instructions :heavy_check_mark:
-- The curl returns the described response :heavy_check_mark:
-- The api is written in Python or Go :heavy_check_mark:
+- Api runs when following setup instructions
+- The curl command returns the described response
+- The api is written in Python
